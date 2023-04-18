@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="formulaire.html">formulaire</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav> 
+</div>
+  	<div id="form">
+	<h1>Formulaire</h1>
+	<form action="traitement.php" method="POST">
+  	<label for="nom">Nom :</label>
+  	<input type="text" id="nom" name="nom" required><br><br>
+
+  	<label for="prenom">Prénom :</label>
+  	<input type="text" id="prenom" name="prenom" required><br><br>
+
+  	<label for="mail">Mail :</label>
+  	<input type="email" id="mail" name="mail" required><br><br>
+
+  	<label for="age"> Age :</label>
+  	<input type="number" id="age" name="age" required><br><br>
+
+
+  	<input class="bouton" type="submit" value="Envoyer">
+	</form>
+	</div>
+  </body>
+  <script>
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+} 
+
+</script>
+</html>
+	

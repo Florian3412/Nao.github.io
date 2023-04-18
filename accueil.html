@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="stylemenu.css">
+
+</head>
+
+<body>
+
+<h1>Présentation du robot NAO</h1>
+
+<div id="carnus">
+  <img src="carnus.png">
+
+</div>
+
+<div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="formulaire.html">formulaire</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav> 
+</div>
+
+
+<div id="par">
+  <p class="paragraphe">Salut moi c'est NAO je suis  un robot humanoïde français, autonome et programmable, initialement développé par la société Aldebaran Robotics, une start-up française située à Paris, rachetée par le groupe japonais SoftBank Groupe en 2015 qui la renomme en SoftBank Robotics.
+  Je suis utilisé à des fins de recherche et d'éducation dans de nombreuses institutions académiques du monde entier. En 2015, plus de 5 000 unités Nao sont utilisées dans plus de 50 pays. </p>
+</div>
+
+
+
+
+<div class="menu-bg" id="menu-bg"></div>
+
+<div id="nao">
+  <img src="NAO.png">
+</div>
+
+</body>
+
+<script>
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+} 
+
+</script>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Evenement Nao</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </div>
+  <nav class="nav" id="nav">
+    <ul>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="formulaire.html">formulaire</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav> 
+</div>
+    <header>
+   	 <img src="carnus.png" alt="Logo Carnus">
+    </header>
+    <main>
+   	 <section id="contact">
+   		 <h1>Contact</h1>
+   		 <p>Lieu du rendez-vous : salle...</p>
+   		 <p>Date et horaire de la présentation : ...</p>
+   		 <a href="ProgEvent.pdf" download>Télécharger le programme</a>
+         <img src="image/nao7.jpg" alt="Image Nao 7">
+         <img src="image/nao8.jpg" alt="Image Nao 8">
+   	 </section>
+   	 
+    </main>
+</body>
+<script>
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+} 
+
+</script>
+</html>
+
